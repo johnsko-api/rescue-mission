@@ -1,0 +1,14 @@
+<h1>List of Questions</h1>
+<%= link_to 'New Question', new_question_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+  <% @questions.each do |question| %>
+  <tr>
+    <td><%= question.title %></td>
+  </tr>
+  <% end %>
+</table>

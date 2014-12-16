@@ -1259,3 +1259,2785 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 16:46:3
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 16:46:31 -0500
+
+
+Started GET "/index" for 127.0.0.1 at 2014-12-15 17:01:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2014-12-15 17:01:18 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for QuestionsController):
+  actionpack (4.1.8) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2014-12-15 17:06:40 -0500
+Processing by QuestionsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template questions/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/JohnSko/Dropbox/ruby/challenges/rescue-mission/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:06:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:06:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.2ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:06:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:08:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:08:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:08:09 -0500
+Processing by QuestionsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template questions/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/JohnSko/Dropbox/ruby/challenges/rescue-mission/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:08:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Text</th>
+     7:   </tr>
+     8: 
+     9:   <% @questions.each do |question| %>
+    10:   <tr>
+    11:     <td><%= question.title %></td>
+    12:     <td><%= question.text %></td>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb__3322253941645673825_70178726748940'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:26 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:31 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:10:44 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:43 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:14:53 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:14:55 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:17:40 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:17:42 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:17:43 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:19:48 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:19:49 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (58.6ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007fa785e58678>:0x007fa7865b01c8>):
+    16: </p>
+    17: <% end %>
+    18: 
+    19: <%= link_to 'Back', articles_path %>
+  app/views/questions/new.html.erb:19:in `_app_views_questions_new_html_erb___1173161126402717468_70178745173600'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.9ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:19:49 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007fa785e58678>:0x007fa7865805b8>):
+    16: </p>
+    17: <% end %>
+    18: 
+    19: <%= link_to 'Back', articles_path %>
+  app/views/questions/new.html.erb:19:in `_app_views_questions_new_html_erb___1173161126402717468_70178745109540'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:13 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:20:14 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:20:15 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:20:18 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:20:21 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:20:22 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:20:23 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:20:24 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:32 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:37 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:21:38 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-15 17:21:42 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:21:43 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-15 17:21:44 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-15 17:21:45 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 118ms (Views: 108.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:30 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:54:32 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:54:33 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 101ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-12-16 12:54:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/JohnSko/.rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:54:54 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:55:37 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:55:45 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:55:47 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:55:53 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:55:54 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:55:55 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 82ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:02 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:59:04 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:59:05 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>""}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-16 17:59:07.252907"], ["text", ""], ["title", ""], ["updated_at", "2014-12-16 17:59:07.252907"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions/2
+Completed 302 Found in 13ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered questions/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:07 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:59:08 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:59:12 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"LALALAL", "text"=>"lalalalalala"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 17:59:17.667198"], ["text", "lalalalalala"], ["title", "LALALAL"], ["updated_at", "2014-12-16 17:59:17.667198"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions/3
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered questions/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 12:59:17 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 12:59:19 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 85ms (Views: 84.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 12:59:35 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:19 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"lalalal", "text"=>"yoyoymama"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:00:24 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:02:20 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"abcdefghijklkjlkj", "text"=>"lkjsdflkjaslfjasdlkfjdlksajflksadjflkadsjflkdsajflkdsjf"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 18:02:50.431310"], ["text", "lkjsdflkjaslfjasdlkfjdlksajflksadjflkadsjflkdsajflkdsjf"], ["title", "abcdefghijklkjlkj"], ["updated_at", "2014-12-16 18:02:50.431310"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions/4
+Completed 302 Found in 44ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/questions/4" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered questions/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:02:50 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:02:52 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:02:53 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:03:01 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"hellorreroejojsdf", "text"=>"hellooo"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:03:01 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:02 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:03:05 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"jamie", "text"=>"lkjdlfkajsdlkfjdsalkfjdlksjf"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:03:10 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 114ms (Views: 109.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:24 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:10:25 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"lalalal", "text"=>"lkjdfdf"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:29 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"yo is john ko the coolest", "text"=>"of coures he is if he wasnt cool what in the world would happen to the whole universe? it would implode!!!"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-16 18:10:59.660296"], ["text", "of coures he is if he wasnt cool what in the world would happen to the whole universe? it would implode!!!"], ["title", "yo is john ko the coolest"], ["updated_at", "2014-12-16 18:10:59.660296"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/questions/5
+Completed 302 Found in 39ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/questions/5" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered questions/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:10:59 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:11:08 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:11:09 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"lllalal", "text"=>"adfdsf"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:11:13 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:12:57 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:13:06 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:07 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>""}, "commit"=>"Save Question"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:10 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>"sdfdsf"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 87ms (Views: 81.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:24 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:25 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>"sdfdsf"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:28 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>"sdfdsf"}, "commit"=>"Save Question"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:13:30 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:19:32 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>"sdfdsf"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered questions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:33 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:39 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:19:42 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:19:43 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:19:44 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154137855740'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154137855740'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:19:45 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154140539160'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154140539160'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:20:26 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:20:28 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:20:29 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154137855740'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154137855740'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:20:29 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154140539160'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154140539160'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:24:55 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:24:56 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 96ms (Views: 92.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:24:57 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154137645240'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154137645240'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:24:57 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154169457360'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154169457360'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:26:30 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154137645240'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154137645240'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:26:30 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>NEW Question</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4: <% if @question.errors.any? %>
+    5: <div id="error_explanation">
+    6:   <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+    7:     this question from being saved:</h2>
+  app/views/questions/new.html.erb:4:in `block in _app_views_questions_new_html_erb__4117214593749841283_70154169457360'
+  app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb__4117214593749841283_70154169457360'
+
+
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/JohnSko/.gem/ruby/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 85ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:41 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"", "text"=>""}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:27:43 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:29:50 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:30:41 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:15 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:27 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:31 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:31:35 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:17 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:39 -0500
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"2", "text"=>"2"}, "commit"=>"Save Question"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered questions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:32:53 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:02 -0500
+
+
+Started GET "/questions/new" for 127.0.0.1 at 2014-12-16 13:33:05 -0500
+Processing by QuestionsController#new as HTML
+  Rendered questions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2014-12-16 13:33:21 -0500
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8aP+IKzwO0VdAVKnqbEHJOK+qJZJrQSZHLsVTzjM5Y=", "question"=>{"title"=>"is jamie a real man?", "text"=>"i wonder if jamie is a real man! we wont find out till we pull down his pants"}, "commit"=>"Save Question"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("created_at", "text", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-16 18:33:21.933515"], ["text", "i wonder if jamie is a real man! we wont find out till we pull down his pants"], ["title", "is jamie a real man?"], ["updated_at", "2014-12-16 18:33:21.933515"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions/6
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/questions/6" for 127.0.0.1 at 2014-12-16 13:33:21 -0500
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered questions/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-16 13:33:22 -0500
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-12-16 13:33:57 -0500
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.2ms)
