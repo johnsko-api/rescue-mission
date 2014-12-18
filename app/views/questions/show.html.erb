@@ -11,7 +11,8 @@
 <h2>Answers</h2>
 <% @question.answers.each do |answer| %>
 <p>
-  <%= answer.body %>
+  <% @user = User.all %>
+  <%= @user.find(answer.user_id).email %>: <%= answer.body %>
 </p>
 <% end %>
 
@@ -24,6 +25,7 @@
 <p>
   <%= f.submit 'Answer'%>
 </p>
+
 <% end %>
 
 
