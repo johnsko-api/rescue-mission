@@ -27,19 +27,28 @@ class QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
-
-    if @question.update(question_params)
-      redirect_to @question
+    if @question.user_id == current_user.id
+      if @question.update(question_params)
+        redirect_to @question
+      else
+        render 'edit'
+      end
     else
-      render 'edit'
+      flash[:notice] = "You must be the owner of that post to edit that"
+      redirect_to @question
     end
+
   end
 
   def destroy
     @question = Question.find(params[:id])
-    binding.pry
+    if @question.user_id == current_user.id
     @question.destroy
     redirect_to questions_path
+    else
+      flash[:notice] = "You must be the owner of that post to delete that"
+    redirect_to @question
+    end
   end
 
   private
